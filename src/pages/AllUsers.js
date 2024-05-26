@@ -42,7 +42,7 @@ const AllUsers = () => {
     })
 
     const fetchAllUsers = async() =>{
-        const fetchData = await fetch(`http://localhost:8080/api/all-user?search=${search}&role=${role}&sort=${sort}&page=${page}`,{
+        const fetchData = await fetch(`https://mern-backend-0hme.onrender.com/api/all-user?search=${search}&role=${role}&sort=${sort}&page=${page}`,{
             method : SummaryApi.allUser.method,
             credentials : 'include'
         })
