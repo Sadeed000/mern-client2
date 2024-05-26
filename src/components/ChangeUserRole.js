@@ -25,7 +25,7 @@ const ChangeUserRole = ({
     console.log(userId)
 
     const updateUserRole = async() =>{
-        const response = await axios.post(`http://localhost:8080/api/update-user/${userId}`, {
+        const response = await axios.post(`https://mern-backend-0hme.onrender.com/api/update-user/${userId}`, {
             userId: userId,
             role: userRole    
         }, {
