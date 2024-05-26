@@ -17,7 +17,7 @@ const CategoryList = () => {
 
         // setLoading(false)
         // setCategoryProduct(dataResponse.data)
-        const dataResponse =await  axios.get(`http://localhost:8080/api/get-categoryProduct`)
+        const dataResponse =await  axios.get(`https://mern-backend-0hme.onrender.com/api/get-categoryProduct`)
         // console.log(dataResponse.data.data)
          setCategoryProduct(dataResponse?.data?.data)
 
